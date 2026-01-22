@@ -1576,6 +1576,15 @@
             }
         }
 
+        getDefaultShortcuts() {
+            return [
+                { id: 1, name: 'GitHub', url: 'https://github.com' },
+                { id: 2, name: 'YouTube', url: 'https://youtube.com' },
+                { id: 3, name: 'Twitter', url: 'https://twitter.com' },
+                { id: 4, name: 'Reddit', url: 'https://reddit.com' }
+            ];
+        }
+
         setupTimeDisplay() {
             const updateTime = () => {
                 const now = this.timeOverride ? new Date(this.timeOverride) : new Date();
